@@ -7,4 +7,5 @@ let userInput = prompt("What's your pick? (Rock, Paper, Scissor")
 
 if (userInput === getComputerChoice()) {
     alert("Nice")
+    hahahaha
 }
