@@ -3,4 +3,8 @@ function getComputerChoice() {
     return choice[Math.floor(Math.random()*choice.length)]
 }
 
-console.log(getComputerChoice())
+let userInput = prompt("What's your pick? (Rock, Paper, Scissor")
+
+if (userInput === getComputerChoice()) {
+    alert("Nice")
+}
