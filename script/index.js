@@ -1,10 +1,3 @@
-function getComputerChoice() {
-    let choice = ["Rock", "Paper", "Scissor"]
-    return choice[Math.floor(Math.random()*choice.length)]
-}
-
-let userInput = prompt("What's your pick? (Rock, Paper, Scissor")
-
-if (userInput === getComputerChoice()) {
-    alert("Nice")
-}
+const rock = document.querySelector('.rock')
+const paper = document.querySelector('.paper')
+const scissor = document.querySelector('.scissor')
