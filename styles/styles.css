@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gloria+Hallelujah&display=swap');
 
+body {
+    background-color: rgb(248, 249, 201);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -31,6 +35,7 @@ h3 {
 
 .options p {
     margin: 40px 0px;
+    cursor: pointer;
 }
 
 .score {
@@ -70,4 +75,13 @@ h3 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
 
+}
+
+.reset {
+    font-family: 'Gloria Hallelujah', cursive;
+    border: none;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
 }
