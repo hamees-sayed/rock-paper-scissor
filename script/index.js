@@ -105,3 +105,13 @@ scissor.addEventListener('click', () => {
         you.textContent = `You: ${yourScore}`;
     }
 });
+
+// if (move === 5) {
+//     if (yourScore > computerScore) {
+//         winner.textContent = "You Won! 🎉"
+//     } else if (yourScore < computerScore) {
+//         winner.textContent = "You Lose! 😔"
+//     } else {
+//         winner.textContent = "It's a Tie! 🎯"
+//     }
+// }
