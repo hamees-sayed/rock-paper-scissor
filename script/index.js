@@ -17,6 +17,7 @@ const playerChoice = player.forEach(option => {
     option.addEventListener('click', () => {
         move += 1
         moves.textContent = `Moves: ${move}`;
+        winnerDeclaration(move);
     })
 });
  
@@ -28,6 +29,7 @@ function resetGame() {
     computer.textContent = `Computer: ${computerScore}`;
     you.textContent = `You: ${yourScore}`;
     moves.textContent = `Moves: ${move}`;
+    winner.textContent = '';
     console.log("reset")
 };
 
@@ -106,12 +108,15 @@ scissor.addEventListener('click', () => {
     }
 });
 
-// if (move === 5) {
-//     if (yourScore > computerScore) {
-//         winner.textContent = "You Won! 🎉"
-//     } else if (yourScore < computerScore) {
-//         winner.textContent = "You Lose! 😔"
-//     } else {
-//         winner.textContent = "It's a Tie! 🎯"
-//     }
-// }
+
+function winnerDeclaration(move) {
+    if (move === 5) {
+        if (yourScore > computerScore) {
+            return winner.textContent = "You Won! 🎉"
+        } else if (yourScore < computerScore) {
+            return winner.textContent = "You Lose! 😔"
+        } else {
+            return winner.textContent = "It's a Tie! 🎯"
+        }
+    }
+}
